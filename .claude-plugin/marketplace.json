@@ -1,8 +1,8 @@
 {
   "name": "wiki-skills",
   "owner": {
-    "name": "kfchou",
-    "url": "https://github.com/kfchou"
+    "name": "xiaohan2012",
+    "url": "https://github.com/xiaohan2012"
   },
   "metadata": {
     "description": "LLM-maintained personal wiki skills for Claude Code",
@@ -13,9 +13,9 @@
       "name": "wiki-skills",
       "source": {
         "source": "url",
-        "url": "https://github.com/kfchou/wiki-skills.git"
+        "url": "https://github.com/xiaohan2012/wiki-skills.git"
       },
-      "description": "Five skills implementing Karpathy's LLM Wiki pattern: wiki-init, wiki-ingest, wiki-query, wiki-lint, wiki-update",
+      "description": "Six skills implementing Karpathy's LLM Wiki pattern: wiki-init, wiki-ingest, wiki-query, wiki-lint, wiki-update, wiki-read-arxiv",
       "version": "1.0.0",
       "strict": true
     }
