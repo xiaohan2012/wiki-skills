@@ -7,8 +7,8 @@ Instead of RAG (re-deriving answers from raw documents every time), this system 
 ## Installation
 
 ```bash
-/plugin marketplace add hanxiao/wiki-skills
-/plugin install wiki-skills@hanxiao/wiki-skills
+/plugin marketplace add xiaohan2012/wiki-skills
+/plugin install wiki-skills@xiaohan2012/wiki-skills
 ```
 
 ## Skills
