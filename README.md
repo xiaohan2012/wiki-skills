@@ -7,8 +7,8 @@ Instead of RAG (re-deriving answers from raw documents every time), this system 
 ## Installation
 
 ```bash
-/plugin marketplace add kfchou/wiki-skills
-/plugin install wiki-skills@kfchou/wiki-skills
+/plugin marketplace add hanxiao/wiki-skills
+/plugin install wiki-skills@hanxiao/wiki-skills
 ```
 
 ## Skills
@@ -20,6 +20,7 @@ Instead of RAG (re-deriving answers from raw documents every time), this system 
 | `wiki-query` | Ask a question against the wiki; optionally save the answer back |
 | `wiki-lint` | Health audit: contradictions, orphans, broken links, coverage gaps |
 | `wiki-update` | Revise existing pages when knowledge changes |
+| `wiki-read-arxiv` | Fetch an arxiv paper's LaTeX source and ingest it into the wiki |
 
 ## How It Works
 

@@ -35,7 +35,7 @@ Ask for confirmation before writing each page. Do not batch-apply changes withou
 
 ### 3. Check for downstream effects
 
-After identifying the primary pages to update, grep for `[[slug]]` references to those pages across all of `wiki/pages/`. For each page that links to an updated page:
+After identifying the primary pages to update, grep for references to those pages across all of `wiki/pages/` — using `[[slug]]` if `link_style: obsidian`, or `pages/slug.md` if `link_style: markdown` (read from SCHEMA.md). For each page that links to an updated page:
 
 - Does the update change anything that page asserts?
 - If yes: flag it explicitly — "[[other-page]] may also need updating based on this change"

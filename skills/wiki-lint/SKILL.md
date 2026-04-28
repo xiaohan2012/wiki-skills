@@ -15,9 +15,9 @@ Find `SCHEMA.md` (search from cwd upward, or `~/wikis/`). If not found, tell the
 
 ### 1. Build the page inventory
 
-Read `wiki/index.md`, `wiki/overview.md`, and all files in `wiki/pages/`. Build a map of:
+Read `SCHEMA.md` to get `link_style`. Read `wiki/index.md`, `wiki/overview.md`, and all files in `wiki/pages/`. Build a map of:
 - All existing slugs (filenames without `.md`)
-- All `[[slug]]` references found in any page
+- All cross-reference links found in any page: `[[slug]]` if `link_style: obsidian`, or `[*](pages/slug.md)` if `link_style: markdown`
 - All `sources` listed in frontmatter
 
 ### 2. Run all checks

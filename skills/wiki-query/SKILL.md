@@ -19,13 +19,13 @@ Scan the full index to identify which pages are likely relevant. Do NOT answer f
 
 ### 2. Read relevant pages
 
-Read the identified pages in full. Follow one level of `[[slug]]` links if they point to pages that seem relevant to the question.
+Read the identified pages in full. Follow one level of cross-reference links if they point to pages that seem relevant to the question.
 
 ### 3. Synthesize the answer
 
-Write a response that:
+Read `link_style` from `SCHEMA.md`. Write a response that:
 - Is grounded in the wiki pages you read
-- Cites inline using `[[slug]]` for every claim sourced from a specific page
+- Cites inline using the link format from SCHEMA.md (`[[slug]]` for obsidian, `[Title](pages/slug.md)` for markdown) for every claim sourced from a specific page
 - Notes agreements and disagreements between pages
 - Flags gaps: "The wiki has no page on X" or "[[page]] doesn't cover Y yet"
 - Suggests follow-up sources to ingest or questions to investigate
@@ -62,4 +62,4 @@ If no:
 
 - **Answering from memory** — Always read the wiki pages. The wiki may contradict what you think you know, and that contradiction is valuable signal.
 - **Skipping the save offer** — Good query answers compound the wiki's value. Always offer.
-- **No citations** — Every factual claim should trace back to a `[[slug]]`.
+- **No citations** — Every factual claim should trace back to a page link (format per SCHEMA.md `link_style`).

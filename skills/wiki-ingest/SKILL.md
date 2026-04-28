@@ -19,7 +19,7 @@ Read `SCHEMA.md` to learn: wiki root path, page frontmatter format, cross-refere
 
 The source can be:
 - **File path** — read it directly; copy to `raw/<filename>` if not already there
-- **URL** — use the `browse` skill to fetch it; save to `raw/<slug>.<ext>`
+- **URL** — use the `browse` skill to fetch it; save to `raw/<slug>.<ext>`. For arxiv URLs, use `wiki-read-arxiv` instead — it fetches the full LaTeX source for richer extraction.
 - **Pasted text** — use what was provided
 
 ### 2. Read the source in full
@@ -43,6 +43,8 @@ Lowercase, hyphens, no special characters.
 Example: "Attention Is All You Need" → `attention-is-all-you-need`
 
 ### 5. Write the source summary page
+
+Read `link_style` from `SCHEMA.md`. Use `[[slug]]` format if `obsidian`, or `[Title](pages/slug.md)` if `markdown`, for all cross-references in the pages below.
 
 Write `wiki/pages/<slug>.md`:
 

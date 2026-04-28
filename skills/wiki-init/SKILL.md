@@ -23,6 +23,9 @@ Ask:
    - Research default: `Sources | Entities | Concepts | Analyses`
    - Codebase default: `Modules | APIs | Decisions | Flows` — see `codebase.md` in this skill's directory for detailed codebase guidance
    - Or specify custom
+5. **How will you primarily browse this wiki?**
+   - `obsidian` — Obsidian or another `[[wiki-link]]`-aware viewer → uses `[[slug]]` syntax
+   - `markdown` — GitHub, VS Code preview, or a static site generator → uses `[Title](pages/slug.md)` syntax
 
 ### 2. Create directory structure
 
@@ -61,8 +64,16 @@ updated: YYYY-MM-DD
 ---
 
 ## Cross-References
+link_style: <obsidian | markdown>
+
+<if obsidian>
 Use `[[slug]]` where slug = filename without `.md`.
-Example: `[[transformer-architecture]]` → `wiki/pages/transformer-architecture.md`
+Example: `[[transformer-architecture]]` → links to `wiki/pages/transformer-architecture.md`
+</if>
+<if markdown>
+Use `[Title](pages/slug.md)` for cross-references.
+Example: `[Transformer Architecture](pages/transformer-architecture.md)`
+</if>
 
 ## Log Entry Format
 ## [YYYY-MM-DD] <operation> | <title>
