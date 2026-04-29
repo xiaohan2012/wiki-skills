@@ -46,6 +46,10 @@ Example: "Attention Is All You Need" → `attention-is-all-you-need`
 
 Read `link_style` from `SCHEMA.md`. Use `[[slug]]` format if `obsidian`, or `[Title](pages/slug.md)` if `markdown`, for all cross-references in the pages below.
 
+Extract the following metadata from the source before writing:
+- **Title**: from `\title{}`, page `<h1>`, or document header
+- **Authors**: from `\author{}` or paper header; fall back to `Unknown`
+- **Venue**: from `\booktitle{}`, `\journal{}`, submission page, or arxiv metadata; fall back to `Unknown`
 Write `wiki/pages/<slug>.md`:
 
 ```markdown
@@ -59,8 +63,11 @@ updated: <today>
 # <Source Title>
 
 **Source:** <original URL or file path>
+**Title:** <full paper title>
 **Date ingested:** <today>
 **Type:** <paper | article | transcript | code | other>
+**Authors:** <author list, or Unknown>
+**Venue:** <conference/journal, or arxiv YYYY, or Unknown>
 
 ## Summary
 

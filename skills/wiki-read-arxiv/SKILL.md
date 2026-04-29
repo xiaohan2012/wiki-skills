@@ -55,7 +55,15 @@ Find the main `.tex` file. Look for:
 
 Read the entrypoint `.tex` file. Follow all `\input{}` and `\include{}` directives recursively to read the full paper. Prefer LaTeX source over any compiled PDF — the source contains the full text without rendering artifacts.
 
-### 6. Hand off to wiki-ingest
+### 6. Extract metadata from LaTeX source
+
+Before handing off, extract from the LaTeX:
+- **Title**: from `\title{}`
+- **Authors**: from `\author{}`
+- **Venue**: from `\booktitle{}`, `\journal{}`, or arxiv submission metadata
+Fall back to `Unknown` for any field not found.
+
+### 7. Hand off to wiki-ingest
 
 Continue from **wiki-ingest step 3** onward (surface takeaways, ask user, write pages, update index/overview/log). Use the arxiv URL as the source reference and `<wiki-root>/raw/<arxiv_id>/` as the raw source location.
 
