@@ -75,6 +75,18 @@ updated: <today>
 - **How:** One sentence on the novel method or component.
 - **So what:** One sentence on the primary impact or result.
 
+### Challenges & Novelty
+
+<What problem does this work address? What is novel about its approach?>
+
+### Relation to Prior Work
+
+<What limitations of earlier work does this address? How does it compare or build on prior art?>
+
+### Technical Details
+
+<Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
+
 If figures are available (e.g. from LaTeX source), embed only the key figures — those that directly illustrate the main contribution, architecture, or result — inside whichever section they best support. Skip decorative, background, or redundant figures. Copy the image to `pages/assets/<slug>-fig.ext` and reference it as `![caption](assets/<slug>-fig.ext)`. If the image is a PDF, convert it first: `magick -density 200 <input>.pdf <output>.png`.
 
 ## Key Takeaways
