@@ -71,7 +71,21 @@ updated: <today>
 
 ## Summary
 
-<2-3 paragraph synthesis — your own words, not abstract copy-paste>
+### Challenges & Novelty
+
+<What problem does this work address? What is novel about its approach?>
+
+### Key Figure
+
+<If a memorable figure exists (often in the introduction), embed it and explain what it illustrates. If LaTeX source with images was provided, copy the image to `pages/assets/<slug>-fig.ext` and reference it here as `![caption](assets/<slug>-fig.ext)`.>
+
+### Relation to Prior Work
+
+<What limitations of earlier work does this address? How does it compare or build on prior art?>
+
+### Technical Details
+
+<Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
 
 ## Key Takeaways
 
