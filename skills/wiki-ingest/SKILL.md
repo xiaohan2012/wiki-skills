@@ -104,10 +104,6 @@ If figures are available (e.g. from LaTeX source), embed only the key figures â€
 ## Entities & Concepts
 
 <list of entities/concepts as [[slug]] links>
-
-## Relation to Other Wiki Pages
-
-<how this connects to or updates existing knowledge>
 ```
 
 ### 6. Update entity and concept pages
