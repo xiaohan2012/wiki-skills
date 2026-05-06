@@ -83,7 +83,7 @@ updated: <today>
 
 <Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
 
-If figures are available (e.g. from LaTeX source), embed them inside whichever section they best illustrate — do not create a separate section for them. Copy the image to `pages/assets/<slug>-fig.ext` and reference it as `![caption](assets/<slug>-fig.ext)`. If the image is a PDF, convert it first: `magick -density 200 <input>.pdf <output>.png`.
+If figures are available (e.g. from LaTeX source), embed only the key figures — those that directly illustrate the main contribution, architecture, or result — inside whichever section they best support. Skip decorative, background, or redundant figures. Copy the image to `pages/assets/<slug>-fig.ext` and reference it as `![caption](assets/<slug>-fig.ext)`. If the image is a PDF, convert it first: `magick -density 200 <input>.pdf <output>.png`.
 
 ## Key Takeaways
 
