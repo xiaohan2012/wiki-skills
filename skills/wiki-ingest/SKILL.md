@@ -71,17 +71,9 @@ updated: <today>
 
 ## Summary
 
-### Challenges & Novelty
-
-<What problem does this work address? What is novel about its approach?>
-
-### Relation to Prior Work
-
-<What limitations of earlier work does this address? How does it compare or build on prior art?>
-
-### Technical Details
-
-<Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
+- **What:** One sentence on the specific problem or constraint addressed. E.g. "Addresses the quadratic scaling bottleneck of self-attention in long-context Transformers."
+- **How:** One sentence on the novel method or component. E.g. "Introduces a linear-complexity attention mechanism using an associative memory bottleneck."
+- **So what:** One sentence on the primary impact or result. E.g. "Reduces memory overhead by 4x while maintaining parity on GLUE benchmarks."
 
 If figures are available (e.g. from LaTeX source), embed only the key figures — those that directly illustrate the main contribution, architecture, or result — inside whichever section they best support. Skip decorative, background, or redundant figures. Copy the image to `pages/assets/<slug>-fig.ext` and reference it as `![caption](assets/<slug>-fig.ext)`. If the image is a PDF, convert it first: `magick -density 200 <input>.pdf <output>.png`.
 
