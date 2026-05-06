@@ -75,15 +75,15 @@ updated: <today>
 - **How:** One sentence on the novel method or component.
 - **So what:** One sentence on the primary impact or result.
 
-### Challenges & Novelty
+## Challenges & Novelty
 
 <What problem does this work address? What is novel about its approach?>
 
-### Relation to Prior Work
+## Relation to Prior Work
 
 <What limitations of earlier work does this address? How does it compare or build on prior art?>
 
-### Technical Details
+## Technical Details
 
 <Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
 
