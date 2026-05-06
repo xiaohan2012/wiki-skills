@@ -19,15 +19,19 @@ The argument can be:
 
 Normalize arxiv IDs to full URLs: `https://arxiv.org/abs/<id>`.
 
-### 2. Get a human-readable title
+### 2. Resolve title and URL
 
-If the user provided a title or paper name alongside the source, use it.
+Either a URL or a paper name/title may be provided — resolve whichever is missing:
 
-If no title was provided, fetch it automatically:
-- For arxiv URLs/IDs: fetch `https://arxiv.org/abs/<id>` and extract the title from the `<title>` tag (strip the "[] " prefix arxiv adds).
-- For other URLs: fetch the page and extract the `<title>` or `<h1>`.
+- **URL provided, no title:** Fetch the URL and extract the title automatically.
+  - For arxiv URLs/IDs: extract from the `<title>` tag (strip the "[] " prefix arxiv adds).
+  - For other URLs: extract from `<title>` or `<h1>`.
 
-Show the fetched title to the user and ask for confirmation before filing the issue.
+- **Title/name provided, no URL:** Search the web for the paper or resource and find a canonical URL (prefer arxiv for papers). Present the found URL to the user and ask for confirmation before proceeding.
+
+- **Both provided:** Use as-is.
+
+Show the resolved (title, URL) pair to the user and ask for confirmation before filing the issue.
 
 ### 3. File the GitHub issue
 
