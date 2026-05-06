@@ -77,7 +77,7 @@ updated: <today>
 
 ### Key Figure
 
-<If a memorable figure exists (often in the introduction), embed it and explain what it illustrates. If LaTeX source with images was provided, copy the image to `pages/assets/<slug>-fig.ext` and reference it here as `![caption](assets/<slug>-fig.ext)`.>
+<If a memorable figure exists (often in the introduction), embed it and explain what it illustrates. If LaTeX source with images was provided, copy the image to `pages/assets/<slug>-fig.ext` and reference it here as `![caption](assets/<slug>-fig.ext)`. If the image is a PDF, convert it to PNG first: `magick -density 200 <input>.pdf <output>.png`.>
 
 ### Relation to Prior Work
 
