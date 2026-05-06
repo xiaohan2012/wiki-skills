@@ -77,7 +77,11 @@ updated: <today>
 
 ## Challenges & Novelty
 
-<What problem does this work address? What is novel about its approach?>
+<1-3 sentence opening: concisely frame the core problem and what this work contributes.>
+
+- <Limitation/novelty 1>: 1-2 sentences.
+- <Limitation/novelty 2>: 1-2 sentences.
+- ...
 
 ## Relation to Prior Work
 
