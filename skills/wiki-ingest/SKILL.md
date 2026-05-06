@@ -83,6 +83,8 @@ updated: <today>
 
 <What limitations of earlier work does this address? How does it compare or build on prior art?>
 
+Where relevant, include a comparison table (rows = papers, columns = key aspects/properties). Below the table, add per-paper comments if needed — 1-2 sentences each, focused on the key difference from this work.
+
 ## Technical Details
 
 <Key algorithms, model architecture, or mathematical formulation — use equations/notation if provided in the source>
