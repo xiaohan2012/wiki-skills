@@ -33,7 +33,19 @@ Either a URL or a paper name/title may be provided — resolve whichever is miss
 
 Show the resolved (title, URL) pair to the user and ask for confirmation before filing the issue.
 
-### 3. File the GitHub issue
+### 3. Determine tags
+
+Tag the issue with **venue**, **year**, and **topic** labels.
+
+- **Venue** (e.g., `icml`, `iclr`, `neurips`): infer from the paper's publication metadata. For arxiv papers, check the comments field (often says e.g. "Accepted at NeurIPS 2024"). If unknown, skip the venue label.
+- **Year** (e.g., `2025`, `2026`): the year of publication (arxiv submission year is fine if no venue is known).
+- **Topic** (e.g., `diffusion`, `tabular`, `survey`): pick the best-fitting topic(s) from the existing labels in the issue's target repo. Run `gh label list --repo <owner>/<repo> --limit 100` to see what exists. If no existing topic fits, propose a new one to the user and create it with `gh label create <name> --repo <owner>/<repo> --description "<desc>"` after confirmation.
+
+Create any missing venue/year labels on the fly (e.g. `gh label create 2026 --repo <owner>/<repo> --description "2026"`).
+
+Show the proposed tag set to the user along with the (title, URL) pair in step 2's confirmation.
+
+### 4. File the GitHub issue
 
 Use `gh issue create` on the current repo with:
 - **Title:** `wiki-request: <human-readable title>`
@@ -51,8 +63,8 @@ Run in this repo:
 \`\`\`
 ```
 
-- **Label:** `wiki` (create it if it doesn't exist — use `gh label create wiki --color 0075ca --description "Wiki ingestion requests"` first if needed)
+- **Labels:** the venue / year / topic labels from step 3. Pass multiple labels with repeated `--label` flags.
 
-### 4. Report
+### 5. Report
 
 Print the issue URL so the user can see it.
